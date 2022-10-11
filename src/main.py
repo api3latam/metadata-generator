@@ -23,11 +23,11 @@ if __name__ == "__main__":
         data = json.load(f)
 
     range_init = [i for i in data['attributes'] 
-        if i['trait_type'] == 'choice'][0]['value']
+        if i['trait_type'] == 'shiny'][0]['value']
     init = int(range_init.split('#')[-1])
 
     data['attributes'] = [i for i in data['attributes']
-        if i['trait_type'] not in ['chain', 'choice']]
+        if i['trait_type'] not in ['chain', 'shiny']]
     data['attributes'].append({'trait_type': 'chain', 
         'value': args.network})
     
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         temp = copy.deepcopy(data)
         temp['name'] = f"{temp['name']} #{i}"
         temp['attributes']\
-                .append({'trait_type': 'choice',
+                .append({'trait_type': 'shiny',
                     'value': f'#{i}'})
 
         print(f'Writting file #{i}\n')
