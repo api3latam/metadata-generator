@@ -41,7 +41,7 @@ if __name__ == "__main__":
                     'value': f'#{i}'})
 
         print(f'Writting file #{i}\n')
-        with open(f'{base_route}/metadata/{i}.json', 'w+') as w:
+        with open(f'{base_route}/metadata/{i}', 'w+') as w:
             json.dump(temp, w)
     
     print("Done writting files!\n")
