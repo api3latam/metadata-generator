@@ -1,0 +1,20 @@
+{
+    "description": "Quantum Choice is your ticket to take the quantum pill of fairness as a public good. You will also have the opportunity to participate in multiple on-chain dynamics that will mark the era of true randomness.... Quantum Randomness.",
+    "image": "https://ipfs.io/ipfs/QmUwi6J2xiDvMGLi3Ti2dJvnMwjFKhTwJD7NTTG5b5Bsso",
+    "name": "Quantum Choice",
+    "attributes": [
+      {
+        "trait_type": "event",
+        "value": "DEVCON VI"
+      },
+      {
+        "trait_type": "chain",
+        "value": "OPTIMISM"
+      },
+      {
+        "trait_type": "choice",
+        "value": "#101"
+      }
+    ],
+    "image_url": "https://ipfs.io/ipfs/QmUwi6J2xiDvMGLi3Ti2dJvnMwjFKhTwJD7NTTG5b5Bsso"
+  }
