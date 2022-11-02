@@ -4,16 +4,16 @@
     "name": "Quantum Ghostly Raffle",
     "attributes": [
       {
-          "trait_type": "event",
+        "trait_type": "event",
         "value": "POST-DEVCON VI"
       },
       {
-          "trait_type": "chain",
+        "trait_type": "chain",
         "value": "ARBITRUM"
       },
       {
-          "trait_type": "ghostly shiny",
-          "value": "#1"
+        "trait_type": "ghostly shiny",
+        "value": "#1"
       }
     ],
     "animation_url": "https://ipfs.io/ipfs/QmQFiB7kvFegrv3Kvaq4JjNfdYuNLa9M2qdN4nnuyv3Ynh"

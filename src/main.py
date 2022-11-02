@@ -10,6 +10,8 @@ if __name__ == "__main__":
                             that you\'ll like to be processed.')
     parser.add_argument('--number', '-n', type=int, default=10, \
                         help="Provide the total number of files to produce.")
+    parser.add_argument('--field', '-v', type=str, \
+                        help="The name of the field that contains token ID.")
     
     args = parser.parse_args()
 
@@ -21,11 +23,11 @@ if __name__ == "__main__":
         data = json.load(f)
 
     range_init = [i for i in data['attributes'] 
-        if i['trait_type'] == 'choice'][0]['value']
+        if i['trait_type'] == args.field][0]['value']
     init = int(range_init.split('#')[-1])
 
     data['attributes'] = [i for i in data['attributes']
-        if i['trait_type'] not in ['choice']]
+        if i['trait_type'] not in [args.field]]
     
     print(f"Baseline template: {data}\n")
     
@@ -33,7 +35,7 @@ if __name__ == "__main__":
         temp = copy.deepcopy(data)
         temp['name'] = f"{temp['name']} #{i}"
         temp['attributes']\
-                .append({'trait_type': 'choice',
+                .append({'trait_type': args.field,
                     'value': f'#{i}'})
 
         print(f'Writting file #{i}\n')
