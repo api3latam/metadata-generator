@@ -1,0 +1,20 @@
+{
+    "description": "Quantum Ghostly Raffle, is your ticket to take the quantum pill of programatic fairness as a public good. You will also have the opportunity to participate in multiple on-chain dynamics that will mark the era of true randomness.... Quantum Randomness. (Post-Devcon VI)",
+    "image": "https://ipfs.io/ipfs/QmWCWQy9VWqYjgjxUuivwdshYARXQVVZocbfRXWMUXABaK",
+    "name": "Quantum Ghostly Raffle",
+    "attributes": [
+      {
+        "trait_type": "event",
+        "value": "POST-DEVCON VI"
+      },
+      {
+        "trait_type": "chain",
+        "value": "ARBITRUM"
+      },
+      {
+        "trait_type": "ghostly number",
+        "value": "#21"
+      }
+    ],
+    "image_url": "https://ipfs.io/ipfs/QmWCWQy9VWqYjgjxUuivwdshYARXQVVZocbfRXWMUXABaK"
+  }
